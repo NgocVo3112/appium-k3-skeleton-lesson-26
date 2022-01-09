@@ -81,7 +81,7 @@ public class DriverFactory {
         if (localAppium != null) {
             targetServer = localAppium + "/wd/hub";
         } else if (hub != null) {
-            targetServer = hub + ":4455/wd/hub";
+            targetServer = hub + ":4444/wd/hub";
         } else {
             throw new IllegalArgumentException("Please provide localAppium/hub");
         }
